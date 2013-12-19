@@ -7,7 +7,6 @@
 
 import os
 from flask import Flask, render_template, request
-import model
 
 # -----------------------------------------------------------------------------
 
@@ -16,11 +15,18 @@ app.secret_key = "heygurlhey"
 
 # -----------------------------------------------------------------------------
 
-app.route("/", methods=["GET"])
+@app.route("/", methods=["GET"])
 def index():
 	return render_template("index.html")
 
 
-app.route("/resume", methods=["GET"])
+@app.route("/resume", methods=["GET"])
 def resume():
 	return render_template("resume.html")
+
+# -----------------------------------------------------------------------------
+
+if __name__ == "__main__":
+
+	port = int(os.getenv('CIRCUIT_PORT', 5000))
+	app.run(host='0.0.0.0', port=port)
