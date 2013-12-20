@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# run.py
+# controller.py
 # Created by Ingrid Avendano 12/19/13.
 # -----------------------------------------------------------------------------
 # Contols different views and runs model depending on the view.
