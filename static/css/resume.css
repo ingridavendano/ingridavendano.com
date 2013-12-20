@@ -1,4 +1,26 @@
 
 div.job {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.job-title {
+    font-size: 20;
+}
+
+.job-timeframe {
+    color: #6E6E6E;
+    font-style: italic;
+}
+
+.job-bullet-point {
+    font-weight: 800;
+    color: #FF8000;
+    width: 15px;
+    height: 40px;
+    float: left;
+    padding-right: 10px;
+}
+
+.job-description {
+    color: #6E6E6E;
 }
