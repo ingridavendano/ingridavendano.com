@@ -10,7 +10,7 @@ footer {
    border: 5px solid #fff;
    overflow: hidden;
    position: relative;
-   text-align: center;
+   /*text-align: center;*/
    cursor: default;
 }
 
@@ -29,11 +29,11 @@ footer {
 }
 
 .view a.info {
-   background:url(../img/link.png) center no-repeat;
+   /*background:url(../img/link.png) center no-repeat;*/
    display: inline-block;
    text-decoration: none;
    padding:0;
-   text-indent:-9999px;
+   text-indent:-60px;
    width:20px;
    height:20px;
 }
@@ -46,14 +46,14 @@ footer {
 
 .fade-dark a.info {
    position:relative;
-   top:-10px; /* Center the link */
+   /*top:-10px;  Center the link */
    opacity: 0;
-   transition: opacity 0.5s 0s ease-in-out;
+   /*transition: opacity 0.5s 0s ease-in-out;*/
 }
 
 .fade-dark:hover .mask {
    opacity: 1;
-   border:100px solid rgba(0,0,0,0.7);
+   /*border:100px solid rgba(0,0,0,0.7);*/
 }
 
 .fade-dark:hover a.info {
