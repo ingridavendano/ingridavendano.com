@@ -1,62 +1,87 @@
 footer {
-	text-align: center;
+    text-align: center;
 }
 
+body {
+    background: #ececec;
+}
+
+
 .view {
-   width: 285px;
-   height: 180px;
-   /*margin: 10px;*/
-   float: left;
-   border: 5px solid #fff;
-   overflow: hidden;
-   position: relative;
-   /*text-align: center;*/
-   cursor: default;
+    width: 228px;
+    height: 282px;
+    /*margin: 10px;*/
+    float: left;
+    border: 5px solid #ececec;
+    overflow: hidden;
+    position: relative;
+    /*text-align: center;*/
+    cursor: default;
 }
 
 .view .mask, .view .content {
-   width: 300px;
-   height: 200px;
-   position: absolute;
-   overflow: hidden;
-   top: 0;
-   left: 0;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 
 .view img {
-   display: block;
-   position: relative;
+    display: block;
+    position: relative;
 }
 
 .view a.info {
-   /*background:url(../img/link.png) center no-repeat;*/
-   display: inline-block;
-   text-decoration: none;
-   padding:0;
-   text-indent:-60px;
-   width:20px;
-   height:20px;
+    /*background:url(../img/link.png) center no-repeat;*/
+    /*display: inline-block;*/
+    /*text-decoration: none;*/
+    /*padding:0;*/
+    /*text-indent:-0px;*/
+    /*width:20px;*/
+    /*height:20px;*/
+    color: #ffffff;
+
+}
+
+.fade-dark {
+    position: relative;
 }
 
 .fade-dark .mask {
-   opacity: 0;
-   overflow:visible;
-   border:100px solid rgba(0,0,0,0.7);
+    opacity: 0;
+    /*position: relative;*/
+    /*overflow:visible;*/
+    background: rgba(0,0,0,0.5);
 }
 
 .fade-dark a.info {
-   position:relative;
-   /*top:-10px;  Center the link */
-   opacity: 0;
-   /*transition: opacity 0.5s 0s ease-in-out;*/
+    position:absolute;
+    top: 108px;
+    font-size: 20;
+    padding: 6px;
+    opacity: 0;
+    /*transition: opacity 0.5s 0s ease-in-out;*/
 }
 
 .fade-dark:hover .mask {
-   opacity: 1;
-   /*border:100px solid rgba(0,0,0,0.7);*/
+    opacity: 1;
+    /*border:100px solid rgba(0,0,0,0.7);*/
+
 }
 
 .fade-dark:hover a.info {
-   opacity:1;
-   transition-delay: 0.3s;
+    opacity:1;
+    /*transition-delay: 0.3s;*/
+}
+
+.fade-dark:hover .mask p {
+    color: #9ed1f4;
+    position: absolute;
+    z-index: 100;
+    bottom: 16px;
+    width: 100%;
+    height: 40px;
+    padding: 6px;
 }
