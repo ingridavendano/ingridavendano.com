@@ -1,87 +1,27 @@
-footer {
-    text-align: center;
-}
-
-body {
-    background: #ececec;
-}
-
-
-.view {
-    width: 228px;
-    height: 282px;
-    /*margin: 10px;*/
-    float: left;
-    border: 5px solid #ececec;
-    overflow: hidden;
-    position: relative;
-    /*text-align: center;*/
-    cursor: default;
-}
-
-.view .mask, .view .content {
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-
-.view img {
-    display: block;
-    position: relative;
-}
-
-.view a.info {
-    /*background:url(../img/link.png) center no-repeat;*/
-    /*display: inline-block;*/
-    /*text-decoration: none;*/
-    /*padding:0;*/
-    /*text-indent:-0px;*/
-    /*width:20px;*/
-    /*height:20px;*/
-    color: #ffffff;
-
-}
-
-.fade-dark {
-    position: relative;
-}
-
-.fade-dark .mask {
-    opacity: 0;
-    /*position: relative;*/
-    /*overflow:visible;*/
-    background: rgba(0,0,0,0.5);
-}
-
-.fade-dark a.info {
-    position:absolute;
-    top: 108px;
-    font-size: 20;
-    padding: 6px;
-    opacity: 0;
-    /*transition: opacity 0.5s 0s ease-in-out;*/
-}
-
-.fade-dark:hover .mask {
-    opacity: 1;
-    /*border:100px solid rgba(0,0,0,0.7);*/
-
-}
-
-.fade-dark:hover a.info {
-    opacity:1;
-    /*transition-delay: 0.3s;*/
-}
-
-.fade-dark:hover .mask p {
-    color: #9ed1f4;
-    position: absolute;
+.sidebar {
+    height: 100%;
+    width: 150px;
+    list-style-type: none;
+    background-color: #f3f4f5;
     z-index: 100;
-    bottom: 16px;
+    position: fixed;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.art {
+    background-color: green;
     width: 100%;
-    height: 40px;
-    padding: 6px;
+}
+
+img {
+    height: 150px;
+}
+
+.pic2 {
+    background-color: yellow;
+}
+
+.pic3 {
+    background-color: red;
 }
