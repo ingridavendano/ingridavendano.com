@@ -22,3 +22,14 @@
 .pic3 {
     background-color: red;
 }
+
+img.art-grid {
+    width: 16em;
+    margin: 0;
+    padding: 0;
+    /*padding: 0.3em 0.2em;*/
+}
+
+img.main {
+    width: 100%;
+}
